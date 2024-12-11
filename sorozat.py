@@ -28,11 +28,11 @@ def egyjegyuek_szama():
     return eredmeny
 
            
-def fajlba_kiir():
+def fajl_kiir():
     f = open("szamok.txt","w",encoding="utf-8")
     f.write("II/F\n")
     f.write(f"\t Egyjegyűek szama: {egyjegyuek_szama()} ")
     f.close()
 
-def konzolra_kiir():
+def konzol_kiir():
     print("\n II/E,F:\n\t",egyjegyuek_szama()) 
